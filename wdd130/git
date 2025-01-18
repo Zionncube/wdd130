@@ -1,0 +1,8 @@
+bash
+git config --global user.name "Zionncube"
+
+bash
+git config --global user.email "mercy.msawenkosi@gmail.com"
+
+
+
