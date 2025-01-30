@@ -1,3 +1,4 @@
+/* Define CSS variables */
 :root {
   --primary-color: #3498db; /* blue */
   --secondary-color: #f1c40f; /* yellow */
@@ -21,101 +22,102 @@ body {
   margin: 0 auto; /* center page */
 }
 
-/* Heading styles */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
-  margin-bottom: 0.5em;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-/* Paragraph styles */
-p {
-  margin-bottom: 1em;
-}
-
-/* Link styles */
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-.social-links a {
-  text-decoration: none;
-}
-
-.social-links a img {
-  border: none; /* remove border */
-}
-
-/* Hero container styles */
-.hero {
-  position: relative;
-  height: 100vh; /* full viewport height */
-  background-image: url('../images/image1.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.hero img {
-  width: 100%; /* relative width */
-  display: block; /* make image a block */
-}
-
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; /* white text */
-  font-size: 48px;
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.7); /* white with opacity */
+/* Header styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  border-radius: 10px;
-}
-
-.hero article img {
-  float: right;
-  margin: 10px;
-}
-
-/* Footer styles */
-footer {
   background-color: var(--primary-color);
   color: #fff;
-  padding: 20px;
-  text-align: center;
-  clear: both;
 }
 
-footer p {
-  margin-bottom: 10px;
+.header-container img {
+  width: 100px;
 }
 
-footer .social-links {
-  margin-top: 20px;
-}
-
-footer .social-links ul {
+.header-container nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
-footer .social-links li {
+.header-container nav ul li {
   margin-right: 20px;
 }
+
+.header-container nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero container styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  background-image: url('../images/image1.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  max-width: 1000px; /* added max-width */
+  margin: 0 auto; /* added margin */
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+article p {
+  padding: 20px;
+}
+
+/* History section styles */
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px; /* added margin-top */
+}
+
+.history h2 {
+  margin-bottom: 10px;
+}
+
+.history p {
+  padding: 20px;
+}
+
+/* Gallery section styles */
+.gallery {
+  display: flex;
+  flex
