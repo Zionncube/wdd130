@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -87,6 +87,7 @@ article {
   background-color: #f7f7f7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 article img {
@@ -109,41 +110,32 @@ article p {
   margin-top: 40px; /* added margin-top */
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
+.history h2 {
+  margin-bottom: 10px;
+}
+
+.history p {
   padding: 20px;
 }
 
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-article {
-  background-color: #f7f7f7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Adventure section styles */
+.adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  border-radius: 10px;
 }
 
-article img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+.adventure h2 {
+  margin-bottom: 20px;
 }
 
-.history {
-  grid-column: 1 / 3;
-}
-
+/* Gallery section styles */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 10px;
+  width: 100%; /* Ensure the gallery takes full width */
 }
 
 .gallery img {
@@ -153,16 +145,25 @@ article img {
   border-radius: 10px;
 }
 
-.history h2 {
-  margin-bottom: 10px;
-}
-
-.history p {
+/* Footer styles */
+footer {
+  text-align: center;
   padding: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-/* Gallery section styles */
-.gallery {
+.social-links ul {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex
+  justify-content: center;
 }
+
+.social-links ul li {
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Adjust icon size */
