@@ -4,151 +4,36 @@
   --secondary-color: #f1c40f; /* yellow */
   --background-color: #f9f9f9; /* light gray */
   --text-color: #333; /* dark gray */
-}
-/* Global styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: 'Playfair Display', serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  max-width: 1200px; /* limit
-  margin: 0 auto; /* center page */
+  --heading-font: "Monserrat", sans-serif;
+  --paragraph-font: "lato", sans-serif;
 }
-
-/* Header styles */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: #fff;
+boby {
+  font-family: var(--paragraph-font);
 }
-
-.header-container img {
-  width: 100px; /* Logo size */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
 }
-
-.header-container nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.header-container nav ul li {
-  margin-right: 20px;
-}
-
-.header-container nav a {
-  color: #fff;
+a {
   text-decoration: none;
 }
-
-/* Hero section styles */
+header,main,footer {
+  max-width:1250px;
+  margine: 0 auto
+}
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 20px;
-  background-image: url('../images/image1.png');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
+  position: relative;
+}
+.hero h1{
+  position: absolute;
+  top: 1.3em;
+  left:50%;
+  transform: translatex(-50%);
+  background-color: var(--secondary-color);
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-top: 20px;
-}
 
-/* Introduction section styles */
-.introduction {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
 
-.introduction article {
-  max-width: 600px; /* Limit article width */
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.introduction img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  
 }
-
-/* History section styles */
-.history {
-  padding: 20px;
-  text-align: center;
-}
-
-.history h2 {
-  margin-bottom: 10px;
-}
-
-.history p {
-  padding: 0 20px; /* Add padding for text */
-}
-
-/* Adventure section styles */
-.adventure {
-  padding: 20px;
-  text-align: center;
-}
-
-.adventure h2 {
-  margin-bottom: 20px;
-}
-
-/* Gallery section styles */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px; /* Space between images */
-  padding: 0 20px; /* Add padding for gallery */
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Footer styles */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.social-links ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.social-links ul li {
-  margin: 0 10px;
-}
-
-.social-links img {
-  width: 30px; /* Adjust icon size */
-  height: 30px; /* Adjust icon size */
-}
-
