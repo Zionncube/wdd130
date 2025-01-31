@@ -95,6 +95,11 @@ footer {
   gap: 1rem;
   justify-item: center;
 }
+figure: nth-of-type(odd) {
+  background-colour: var(--background-color);
+  color: #fff;
+  align-self: center;
+}
 figure:nth-of-type(even){
   background-colour: var(--background-color);
   color: #fff;
@@ -110,9 +115,26 @@ figcaption{
   justify-self: centre;
   padding 1.3em 0;
 }
-
+nav a:hover{
+  background-colour: nav(--secondery-color);
+  color: #fff;
+}
+footer{
+  display:flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: #242322;
+  margin-top:100px;
+}
+footer p{
+  color:#fff;
+}
+footer-menu {
+  color: #1A1D23
+}
+.social links{
+  display:flex;
   
-
 
 
 
