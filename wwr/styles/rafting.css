@@ -54,6 +54,20 @@ header,main,footer {
   padding: 1rem;
   font-weight: 590;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a{ 
+  padding: 1.3em;
+  color: #fff;
+  font-family: var(--primary-color);
+}
+nav a:hover {
+  background-color: #fff;
+  color: nav(--background-color);
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -68,6 +82,10 @@ footer {
 .social-img {
   width: 4em; 
 }
+
+
+
+
 
 
 
