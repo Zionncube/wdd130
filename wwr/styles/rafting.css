@@ -132,8 +132,19 @@ footer p{
 footer-menu {
   color: #1A1D23
 }
-.social links{
+.sociallinks{
   display:flex;
+  gap:1.2rem;
+}
+.sociallinks img{
+  width: 1.5rem;
+
+.sociallinks a: hover{
+  background-color: unset;
+}
+
+  
+
   
 
 
