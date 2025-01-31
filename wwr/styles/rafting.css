@@ -5,7 +5,6 @@
   --background-color: #f9f9f9; /* light gray */
   --text-color: #333; /* dark gray */
 }
-
 /* Global styles */
 * {
   box-sizing: border-box;
@@ -18,7 +17,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
-  max-width: 1200px; /* limit page width */
+  max-width: 1200px; /* limit
   margin: 0 auto; /* center page */
 }
 
@@ -33,7 +32,7 @@ body {
 }
 
 .header-container img {
-  width: 100px;
+  width: 100px; /* Logo size */
 }
 
 .header-container nav ul {
@@ -52,7 +51,7 @@ body {
   text-decoration: none;
 }
 
-/* Hero container styles */
+/* Hero section styles */
 .hero {
   display: flex;
   flex-direction: column;
@@ -62,52 +61,39 @@ body {
   background-size: cover;
   background-position: center;
   color: #fff;
-  max-width: 1000px; /* added max-width */
-  margin: 0 auto; /* added margin */
+  text-align: center;
 }
 
 .hero h1 {
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-/* Main content styles */
-main {
+/* Introduction section styles */
+.introduction {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+.introduction article {
+  max-width: 600px; /* Limit article width */
   background-color: #f7f7f7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-article img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-article p {
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduction img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* History section styles */
 .history {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
-  margin-top: 40px; /* added margin-top */
+  text-align: center;
 }
 
 .history h2 {
@@ -115,15 +101,13 @@ article p {
 }
 
 .history p {
-  padding: 20px;
+  padding: 0 20px; /* Add padding for text */
 }
 
 /* Adventure section styles */
 .adventure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
+  text-align: center;
 }
 
 .adventure h2 {
@@ -134,14 +118,13 @@ article p {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 10px;
-  width: 100%; /* Ensure the gallery takes full width */
+  gap: 10px; /* Space between images */
+  padding: 0 20px; /* Add padding for gallery */
 }
 
 .gallery img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -167,3 +150,5 @@ footer {
 .social-links img {
   width: 30px; /* Adjust icon size */
   height: 30px; /* Adjust icon size */
+}
+
