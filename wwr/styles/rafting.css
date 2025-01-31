@@ -82,7 +82,36 @@ footer {
 .social-img {
   width: 4em; 
 }
+.history {
+  display: grid;
+  grid-templet-columns: 2fr 1fr 2fr;
+  gap: 3em;
+  margine: 50px 0;
+  }
+.adventures{
+  margine: 50px 0;
+  display: grid;
+  grid-templet-column:(5, 1fr);
+  gap: 1rem;
+  justify-item: center;
+}
+figure:nth-of-type(even){
+  background-colour: var(--background-color);
+  color: #fff;
+  align-self: center;
+}
+figcaption{
+  text-align: center;
+  padding: 1em 0;
+}
+.history h2,
+.adventures h2{
+  grid-colum:1/-1;
+  justify-self: centre;
+  padding 1.3em 0;
+}
 
+  
 
 
 
