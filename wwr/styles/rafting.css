@@ -62,8 +62,15 @@ footer {
   grid-template-columns: 2fr 1fr 1fr;
   padding: 2rem
 }
+.social { 
+  grid-colum: 3;
+  align-self: end;
+}
 .social-img {
-  width: 4em;
+  width: 4em; 
+}
+
+
 
 
 
