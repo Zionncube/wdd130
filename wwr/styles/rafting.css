@@ -24,16 +24,57 @@ header,main,footer {
 .hero {
   position: relative;
 }
+.hero img{
+  width:100%
+}
 .hero h1{
   position: absolute;
   top: 1.3em;
   left:50%;
   transform: translatex(-50%);
   background-color: var(--secondary-color);
+  color: var(--primery-color);
+  padding: 1.2rem;
+  font-size: 1.4rem;
 }
+.hero article { 
+  background-color: #ffffff61;
+  position: absolute;
+  top: 18rem;
+  left: 2rem;
+  right: 2rem;
+}
+.hero article img {
+  float: right;
+  margine: 2rem;
+  width: 12rem;
+}
+.hero article p {
+  color: var(--primary-color);
+  font-size: 1.15rem;
+  padding: 1rem;
+  font-weight: 590;
+}
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 2rem
+}
+.social-img {
+  width: 4em;
 
 
 
 
+    
   
+
+
+
 }
+
+
+
+
