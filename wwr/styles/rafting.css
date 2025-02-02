@@ -18,13 +18,13 @@ a {
 }
 header,main,footer {
   max-width:1250px;
-  margine: 0 auto
+  margine: 0 auto;
 }
 .hero {
   position: relative;
 }
 .hero img{
-  width:100%
+  width:100%;
 }
 .hero h1{
   position: absolute;
@@ -73,7 +73,7 @@ footer {
   color: var(--secondary-color);
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  padding: 2rem
+  padding: 2rem;
 }
 .social { 
   grid-colum: 3;
