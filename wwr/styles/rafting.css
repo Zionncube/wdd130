@@ -1,4 +1,4 @@
-grid-container {
+8grid-container {
 display: grid;
 grid-template-columns: repeat(12, 1fr);
 gap: 10px;
@@ -63,8 +63,6 @@ nav a {
 }
 
 
-.
-
 .grid-item--1 {
 grid-column: 1 / 13;
 padding: 20px;
@@ -103,20 +101,20 @@ text-align: center;
 grid-column: 1 / 13;
 padding: 20px;
 }
-
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #03055B;
-  color: #fff;
-  padding: 20px;
-  align-items: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+background-color: #03055B;
+color: #fff;
+padding: 20px;
+align-items: center;
+}
 
 .social-links {
+grid-column: 1;
 display: flex;
 justify-content: space-between;
 width: 100px;
-
 }
 
 .social-links img {
@@ -125,11 +123,13 @@ height: 20px;
 margin-right: 10px;
 }
 
-.copyright {
-margin-left: 20px;
-}
-
 .wireframe-link {
-margin: 0 auto;
+grid-column: 2;
+text-align: center;
 }
 
+.copyright {
+grid-column: 3;
+text-align: left;
+margin-right: 20px;
+}
