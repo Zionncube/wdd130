@@ -36,4 +36,30 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+Based on your wireframe, I'll help you create the second phase with a background image.
+
+Here's the updated HTML and CSS code:
+
+
+.hero-section {
+  grid-column: 1 / 13;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-section h2 {
+  font-size: 48px;
+}
+
+.hero-section p {
+  font-size: 24px;
+}
+
+
 
