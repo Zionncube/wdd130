@@ -1,102 +1,135 @@
-.container {  display: grid;
+.container {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.6fr 1.1fr 2.3fr 0.3fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "Header Header"
-    "Hero image Hero image"
-    "Main Main"
-    "Footer Footer";
+  grid-template-areas: "Header Header" "Hero image Hero image" "Main Main" "Footer Footer";
 }
 
-.header {  display: grid;
+.Header {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "Logo Nav Nav Nav";
+  grid-template-areas: "Logo Nav Nav Nav";
   grid-area: Header;
 }
-.logo { grid-area: Logo; }
 
-.nav { grid-area: Nav; }
+.Logo {
+  grid-area: Logo;
+}
 
-.hero image {  display: grid;
+.Nav {
+  grid-area: Nav;
+}
+
+.Hero {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.9fr 2.2fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    ". . Title Title . ."
-    ". Description  Description  Description  Description  ."
-    ". . . . . .";
+  grid-template-areas: ". . Title Title . ." ". Description Description Description Description ." ". . . . . .";
   grid-area: Hero image;
 }
-.title { grid-area: Title; }
 
-.description  {  display: grid;
+.Title {
+  grid-area: Title;
+}
+
+.Description {
+  display: grid;
   grid-template-columns: 1fr 0.8fr 1.2fr;
   grid-template-rows: 0.5fr 2.3fr 0.2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    ". . ."
-    ". . Image2"
-    ". . .";
-  grid-area: Description ;
+  grid-template-areas: ". . ." ". . Image2" ". . .";
+  grid-area: Description;
 }
 
-.image2 { grid-area: Image2; }
+.Image2 {
+  grid-area: Image2;
+}
 
-.main {  display: grid;
+.Main {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.4fr 1.5fr 1.6fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "Employee image1 Employee description 1 Employee description 1 Employee description 1"
-    "Employee image2 Employee description2 Employee description2 Employee description2"
-    "Employee image3 Employee description3 Employee description3 Employee description3"
-    ". . Map Map";
+  grid-template-areas: "Employee image1 Employee description 1 Employee description 1 Employee description 1" "Employee image2 Employee description2 Employee description2 Employee description2" "Employee image3 Employee description3 Employee description3 Employee description3" ". . Map Map";
   grid-area: Main;
 }
-.employee image1 { grid-area: Employee image1; }
 
-.employee image2 { grid-area: Employee image2; }
+.Employee {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Image Description";
+}
 
-.employee image3 { grid-area: Employee image3; }
+.Employee image1 {
+  grid-area: Employee image1;
+}
 
-.employee description 1 { grid-area: Employee description 1; }
+.Employee description 1 {
+  grid-area: Employee description 1;
+}
 
-.employee description2 { grid-area: Employee description2; }
+.Employee image2 {
+  grid-area: Employee image2;
+}
 
-.employee description3 { grid-area: Employee description3; }
+.Employee description2 {
+  grid-area: Employee description2;
+}
 
-.map { grid-area: Map; }
+.Employee image3 {
+  grid-area: Employee image3;
+}
 
-.form { grid-area: Form; }
+.Employee description3 {
+  grid-area: Employee description3;
+}
 
-.footer {  display: grid;
+.Map {
+  grid-area: Map;
+}
+
+.Contact {
+  grid-area: Contact;
+}
+
+.Footer {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "Copyright  Wireframe link Social links";
+  grid-template-areas: "Copyright Wireframe link Social links";
   grid-area: Footer;
 }
-.social links { grid-area: Social links; }
 
-.wireframe link { grid-area: Wireframe link; }
+.Social {
+  grid-area: Social links;
+}
 
-.copyright  { grid-area: Copyright ; }
+.Wireframe {
+  grid-area: Wireframe link;
+}
 
+.Copyright {
+  grid-area: Copyright;
+}
 
-html, body , .container {
+html,
+body,
+.container {
   height: 100%;
   margin: 0;
 }
