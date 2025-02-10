@@ -1,128 +1,102 @@
-8grid-container {
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-gap: 10px;
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.6fr 1.1fr 2.3fr 0.3fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header"
+    "Hero image Hero image"
+    "Main Main"
+    "Footer Footer";
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  background-color: #03055B;
-  color: #fff;
-  padding: 20px;
-  align-items: center;
+.header {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Logo Nav Nav Nav";
+  grid-area: Header;
+}
+.logo { grid-area: Logo; }
+
+.nav { grid-area: Nav; }
+
+.hero image {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 2.2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . Title Title . ."
+    ". Description  Description  Description  Description  ."
+    ". . . . . .";
+  grid-area: Hero image;
+}
+.title { grid-area: Title; }
+
+.description  {  display: grid;
+  grid-template-columns: 1fr 0.8fr 1.2fr;
+  grid-template-rows: 0.5fr 2.3fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . Image2"
+    ". . .";
+  grid-area: Description ;
 }
 
-header img {
-  grid-column: 1;
-  width: 100px;
-  height: auto;
-  margin-left: 20px;
-}
+.image2 { grid-area: Image2; }
 
-nav {
-  grid-column: 2;
-  display: flex;
-  justify-content: flex-end;
+.main {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.4fr 1.5fr 1.6fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Employee image1 Employee description 1 Employee description 1 Employee description 1"
+    "Employee image2 Employee description2 Employee description2 Employee description2"
+    "Employee image3 Employee description3 Employee description3 Employee description3"
+    ". . Map Map";
+  grid-area: Main;
 }
+.employee image1 { grid-area: Employee image1; }
 
-nav ul {
-  list-style: none;
+.employee image2 { grid-area: Employee image2; }
+
+.employee image3 { grid-area: Employee image3; }
+
+.employee description 1 { grid-area: Employee description 1; }
+
+.employee description2 { grid-area: Employee description2; }
+
+.employee description3 { grid-area: Employee description3; }
+
+.map { grid-area: Map; }
+
+.form { grid-area: Form; }
+
+.footer {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Copyright  Wireframe link Social links";
+  grid-area: Footer;
+}
+.social links { grid-area: Social links; }
+
+.wireframe link { grid-area: Wireframe link; }
+
+.copyright  { grid-area: Copyright ; }
+
+
+html, body , .container {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero-section {
-  grid-column: 1 / 13;
-  background-image: url('images/hero.png');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.hero-section h2 {
-  font-size: 48px;
-}
-
-.hero-section p {
-  font-size: 24px;
-}
-
-
-.grid-item--3 {
-grid-column: 1 / 13;
-padding: 20px;
-display: grid;
-grid-template-columns: 1fr 3fr;
-gap: 20px;
-}
-
-.employee-card {
-display: flex;
-flex-direction: row;
-align-items: center;
-}
-
-.employee-card img {
-width: 100%;
-height: 150px;
-object-fit: cover;
-border-radius: 50%;
-}
-
-.employee-description {
-background-color: #FFC5C5; 
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-
-.employee-description p {
-text-align: left;
-color: #333;
-}
-
-footer {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-background-color: #03055B;
-color: #fff;
-padding: 20px;
-align-items: center;
-}
-.social-links {
-grid-column: 1;
-display: flex;
-justify-content: space-between;
-width: 100px;
-}
-
-.social-links img {
-width: 20px;
-height: 20px;
-margin-right: 10px;
-}
-
-.wireframe-link {
-grid-column: 2;
-text-align: center;
-}
-
-.copyright {
-grid-column: 3;
-text-align: left;
-margin-right: 20px;
 }
