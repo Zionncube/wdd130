@@ -51,7 +51,7 @@
   text-decoration: none;
 }
 
-.hero-image {
+.hero-img {
   grid-area: "Hero Image";
   background-image: url('images/hero.jpg');
   background-size: cover;
@@ -83,7 +83,7 @@
   padding: 20px;
 }
 
-.employee-image {
+.employee-img {
   grid-column: 1;
   width: 100%;
   height: 150px;
@@ -136,5 +136,5 @@
 
 .copyright {
   grid-column: 3;
-  text-align: right;
+  text-align: left;
 }
