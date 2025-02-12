@@ -67,6 +67,12 @@
   margin-bottom: 20px;
   color: #fff;
 }
+.description p {
+    font-size: 18px;
+    color: #666; /* dark gray */
+    margin-bottom: 20px;
+    text-align: justify;
+}
 
 .main {
   grid-column: 1 / -1;
