@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
+  color: #333333;
 }
 
 .container {
@@ -18,7 +20,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
-  background-color: #333;
+  background-color: #3498db;
   color: #fff;
 }
 
@@ -60,23 +62,22 @@ body {
   background-image: url('images/hero.jpg');
   background-size: cover;
   background-position: center;
+  color: #fff;
 }
 
 .title {
   font-size: 70px;
   margin-bottom: 20px;
-  color: #fff;
 }
 
 .description {
   font-size: 30px;
   margin-bottom: 20px;
-  color: #fff;
 }
 
 .description p {
   font-size: 18px;
-  color: #666; /* dark gray */
+  color: #666; 
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -112,7 +113,7 @@ body {
 }
 
 .trips {
-  background-color: #f2f2f2;
+  background-color: #f1c40f;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -130,7 +131,7 @@ body {
 }
 
 .trips button {
-  background-color: #333;
+  background-color: #3498db;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -139,7 +140,7 @@ body {
 }
 
 .trips button:hover {
-  background-color: #555;
+  background-color: #2ecc71;
 }
 
 .footer {
@@ -148,7 +149,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
-  background-color: #333;
+  background-color: #3498db;
   color: #fff;
 }
 
@@ -165,7 +166,7 @@ body {
 }
 
 .trip {
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -183,7 +184,7 @@ body {
 }
 
 .trip button {
-  background-color: #333;
+  background-color: #3498db;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -192,7 +193,7 @@ body {
 }
 
 .trip button:hover {
-  background-color: #555;
+  background-color: #2ecc71;
 }
 
 .call-to-action {
@@ -201,8 +202,60 @@ body {
 }
 
 .call-to-action a {
-  background-color: #333;
+  background-color: #3498db;
   color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 10px 20
+} 
+
+.call-to-action a {
+background-color: #3498db;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.call-to-action a:hover {
+background-color: #2ecc71;
+}
+
+.success {
+color: #2ecc71;
+}
+
+.warning {
+color: #e67e73;
+}
+
+.error {
+color: #e74c3c;
+}
+
+/* Additional styles */
+
+button:focus {
+outline: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"], input[type="email"], textarea {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 100%;
+box-sizing: border-box;
+}
+
+input[type="submit"] {
+background-color: #3498db;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #2ecc71;
+}
+
