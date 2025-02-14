@@ -104,6 +104,36 @@
   border: 1px;
 }
 
+.trips {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.trips h2 {
+  margin-top: 0;
+}
+
+.trips button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trips button:hover {
+  background-color: #555;
+}
 .footer {
   grid-column: 1 / -1;
   display: flex;
